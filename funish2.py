@@ -2,4 +2,4 @@ import pandas as pd
 
 df = pd.read_csv("funish.csv")
 
-print(df.head(3))
+print(df[[2,3]])
