@@ -4,4 +4,6 @@ import pandas as pd
 
 df = pd.read_csv("funish.csv")
 
-print(df.insert())
+df["sales_1000"] = df["sales"] / 1000
+
+print(df)
