@@ -1,5 +1,9 @@
+from pandas import Series,DataFrame
+
 import pandas as pd
 
 df = pd.read_csv("funish.csv")
 
-print(df.head(3).tail(2))
+df2 = df[(df.name == "禮田") | (df.name == "川路")]
+
+print(df2)
